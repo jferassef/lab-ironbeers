@@ -1,0 +1,14 @@
+ 
+ <img  src="{{this.image}} " class="card-img-top" alt="...">
+ <div>
+    <a class="clicked" href="/clickedbeer">{{this.name}}</a>
+   <p>{{this.description}}</p>
+   <h3>{{this.tagline}}</h3>
+   <ul> 
+{{#each food_pairing}}
+   <li>{{this}}</li>
+   {{/each}}
+   </ul>
+   <p>{{this.brewers_tips}}</p>
+  </div>
+</div>

@@ -42,4 +42,23 @@ app.get('/randombeer', (req, res, next) => {
     });
 });
 
+// extra: create partial and hide random extra properties when random page is click showthem
+//Bonus 6
+// create a function that returns the ID of the clicked beer
+/* function clickedID() {
+  const clickedBeer = document.querySelector('.clicked');
+  clickedBeer.addEventListener('click', target => {
+    return target.id;
+  });
+}
+
+app.get('/clickedbeer', (req, res) => {
+  punkAPI
+    .getBeer(clickedID)
+    .then(beerFromAPI => {
+      res.render('beers', { beerFromAPI });
+    })
+    .catch(error => console.log(error));
+}); */
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));

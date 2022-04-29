@@ -1,16 +1,9 @@
-
 <div class="cards"> 
-{{#each getBeers}}
+{{#each beersFromAPI}}
 
-<div class="card" style="width: 18rem;">
-  <img src="{{this.image}} " class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{this.name}}</h5>
-   <p class="last-name">{{this.description}}</p>
-   <h3>{{this.tagline}}</h3>
-  </div>
-</div>
+{{> beerPartial this}}
 {{/each}}
-</div>
+
 
 <link rel="stylesheet" href="stylesheets\styles.css">
+</div>

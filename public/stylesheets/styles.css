@@ -12,6 +12,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .cards{
+  margin-left: 5%;
   display: flex;
   flex-wrap: wrap;
 }

@@ -42,6 +42,16 @@ app.get('/randombeer', (req, res, next) => {
     });
 });
 
+app.get('/beers/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const oneBeer = await getBeer(id);
+    console.log(oneBeer);
+    res.render('beers/clickedbeer', { oneBeer });
+  } catch (e) {
+    console.error(e);
+  }
+});
 // extra: create partial and hide random extra properties when random page is click showthem
 //Bonus 6
 // create a function that returns the ID of the clicked beer
